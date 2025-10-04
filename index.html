@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Wartungsarbeiten — IU</title>
+  <style>
+    /* Simple reset */
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    html,body { height: 100%; }
+    body {
+      font-family: "Inter", "Helvetica Neue", Arial, sans-serif;
+      color: #111;
+      background: #fff;
+      -webkit-font-smoothing:antialiased;
+      -moz-osx-font-smoothing:grayscale;
+      line-height: 1.25;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      padding: 40px 18px;
+    }
+
+    .container {
+      max-width: 760px;
+      width: 100%;
+      text-align: center;
+    }
+
+    /* logo placeholder */
+    .logo {
+      display: inline-block;
+      margin: 6px 0 56px;
+      text-align: left;
+    }
+    .logo img {
+      max-width: 220px;
+      height: auto;
+      display: block;
+    }
+
+    h1 {
+      font-size: clamp(36px, 6vw, 64px);
+      font-weight: 500;
+      color: #111;
+      margin-bottom: 20px;
+      letter-spacing: -0.5px;
+    }
+
+    p.lead {
+      font-size: clamp(16px, 2.2vw, 22px);
+      color: #222;
+      margin-bottom: 28px;
+    }
+
+    .date {
+      font-size: 20px;
+      font-weight: 600;
+      margin-bottom: 36px;
+      color: #111;
+    }
+
+    .action {
+      display: inline-block;
+      width: 100%;
+      max-width: 640px;
+    }
+
+    .btn {
+      display: inline-block;
+      width: 100%;
+      padding: 18px 26px;
+      text-align: center;
+      text-decoration: none;
+      font-size: 18px;
+      font-weight: 600;
+      letter-spacing: 1px;
+      color: #fff;
+      background: linear-gradient(90deg,#2e77ff,#2aa2ff);
+      border-radius: 4px;
+      border: none;
+      cursor: pointer;
+      box-shadow: 0 1px 0 rgba(0,0,0,0.05);
+    }
+
+    /* spacing for mobile */
+    @media (min-width: 900px) {
+      body { padding-top: 70px; }
+      .logo { margin-bottom: 80px; }
+    }
+
+    /* accessibility focus */
+    .btn:focus { outline: 3px solid rgba(45,120,255,0.35); outline-offset: 3px; }
+  </style>
+</head>
+<body>
+  <main class="container" role="main" aria-labelledby="maintenance-heading">
+    <div class="logo" aria-hidden="false">
+      <!-- Replace with your logo file. Keep the same aspect ratio. -->
+      <img src="logo-placeholder.png" alt="IU — Internationale Hochschule (Logo placeholder)">
+    </div>
+
+    <h1 id="maintenance-heading">Wir führen Wartungsarbeiten durch.</h1>
+
+    <p class="lead">Die Seite wird am Montag wieder verfügbar sein.</p>
+
+    <div class="date" aria-label="Datum der Wiederverfügbarkeit">06.10.2025</div>
+
+    <div class="action" style="margin: 0 auto;">
+      <a class="btn" href="#" role="button" aria-pressed="false">BETRETEN</a>
+    </div>
+  </main>
+</body>
+</html>
